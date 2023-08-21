@@ -3,24 +3,6 @@
 // Installs key listeners to move the ship and fire bullets.
 // Installs a timer to call Game.prototype.step.
 import Game from "./game.js";
-import MovingObject from "./moving_object.js";
 class GameView {
   constructor(ctx) {}
 }
-
-const canvasEl = document.getElementById("game-canvas");
-// canvasEl.width = Game.DIM_X;
-// canvasEl.height = Game.DIM_Y;
-const ctx = canvasEl.getContext("2d");
-
-const mo = new MovingObject({
-  pos: [30, 30],
-  vel: [10, 10],
-  radius: 5,
-  color: "red",
-});
-console.log(mo);
-mo.draw(ctx);
-//ctx.clearRect(0, 0, 500, 500);
-mo.move();
-mo.draw(ctx);
