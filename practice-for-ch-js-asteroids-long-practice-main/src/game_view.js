@@ -12,7 +12,6 @@ const canvasEl = document.getElementById("game-canvas");
 // canvasEl.width = Game.DIM_X;
 // canvasEl.height = Game.DIM_Y;
 const ctx = canvasEl.getContext("2d");
-console.log("Webpack is working!");
 
 const mo = new MovingObject({
   pos: [30, 30],
@@ -20,5 +19,8 @@ const mo = new MovingObject({
   radius: 5,
   color: "red",
 });
-
+console.log(mo);
+mo.draw(ctx);
+//ctx.clearRect(0, 0, 500, 500);
+mo.move();
 mo.draw(ctx);
