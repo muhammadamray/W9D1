@@ -6,5 +6,6 @@ import Game from "./game.js";
 class GameView {
   constructor(ctx) {}
 }
+console.log("Hello World!");
 
 export default GameView;

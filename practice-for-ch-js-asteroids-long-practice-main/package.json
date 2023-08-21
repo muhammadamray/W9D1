@@ -12,7 +12,7 @@
     "webpack-dev-server": "^4.15.1"
   },
   "version": "1.0.0",
-  "description": "My webpack project",
+  "description": "Asteriods Game",
   "name": "my-webpack-project",
   "main": "game-view.js",
   "scripts": {
